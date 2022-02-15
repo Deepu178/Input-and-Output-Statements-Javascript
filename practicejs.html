@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="myH">Hello everyone!!!!</h3>
+    <button onclick="myFunc()">Click here!!!!</button>
+    <script>
+        function myFunc(){
+            var str = 'Welcome to edureka internship'
+            const Element = document.getElementById('myH')  //identity of html element
+            Element.innerHTML = str //insert the data
+        }
+    </script>
+    <h3 id="myP">Hello students!!!</h3>
+    <button onclick="myFunc()">Click here!!!</button>
+    <script>
+        function myFunc(){
+        var str = 'Welcome to edureka internship'
+        document.write(str)  //it will add the data but will remove all the previous HTML
+        }
+    </script> -->
+
+    <h3 id="myP">Hello learners</h3>
+    <button onclick="myFunc()">Click here!!!</button>
+    <script>
+        function myFunc(){
+            var str = 'Welcome to edureka internship'
+            window.alert(str)
+        }
+    </script> 
+    <h3>Hello learners</h3>
+    <button onclick="myFunc()">Click here</button>
+    <script>
+    function myFunc(){
+        var str =  'Welcome to edureka internship'
+        console.log(str)
+    }
+    </script>
+    <p>Enter something</p>
+    <h3 id="myHeader"></h3>
+    <script>
+        var x = window.prompt()
+        Element = document.getElementById('myHeader')
+        Element.innerHTML = x
+    </script>
+    <p>Choose your option</p>
+    <h3 id="myHeader"></h3>
+<script>
+    var x = window.confirm()
+    Element = document.getElementById('myHeader')
+    if(x==true){
+        Element.innerHTML = 'Welcome to edureka'
+    }else{
+        Element.innerHTML = 'Please come back later'
+    }
+</script>
+</body>
+</html>
